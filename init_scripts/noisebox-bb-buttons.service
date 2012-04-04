@@ -1,0 +1,9 @@
+[Unit]
+Description=Noisebox beaglebone buttons
+
+[Service]
+WorkingDirectory=/home/root/noisebox-beaglebone
+ExecStart=/usr/bin/python buttons.py
+
+[Install]
+WantedBy=multi-user.target

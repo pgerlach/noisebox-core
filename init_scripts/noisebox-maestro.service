@@ -1,0 +1,9 @@
+[Unit]
+Description=Noisebox maestro
+
+[Service]
+WorkingDirectory=/home/root/noisebox-maestro
+ExecStart=/usr/bin/node src/maestro.js
+
+[Install]
+WantedBy=multi-user.target

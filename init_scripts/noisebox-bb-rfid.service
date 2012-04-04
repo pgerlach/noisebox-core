@@ -1,0 +1,9 @@
+[Unit]
+Description=Noisebox beaglebone rfid reader
+
+[Service]
+WorkingDirectory=/home/root/noisebox-beaglebone
+ExecStart=/usr/bin/python rfid.py
+
+[Install]
+WantedBy=multi-user.target
